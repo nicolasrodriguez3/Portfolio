@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Birthstone&family=Source+Sans+Pro:wght@200;300;400;700;900&display=swap");
+
+:root {
+	--color-texto: #fff6f2;
+	--color-secundario: #403d39;
+	--color-principal: #d82f11;
+	--color-fondo: #252422;
+}
+
+html::-webkit-scrollbar {
+	width: 8px;
+	background: #3d3d3d;
+	overflow-x: hidden;
+}
+html::-webkit-scrollbar-thumb {
+	background: #575757;
+	border-radius: 5px;
+}
+html::-webkit-scrollbar-thumb:hover {
+	background: #838383;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+html::-webkit-scrollbar-thumb:active {
+	background-color: #acacac;
+}
+.fs-1-propio {
+	font-size: calc(2rem + 1.5vw) !important;
+}
+.my-6 {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+.mt-6 {
+	margin-top: 5rem;
+}
+.py-6 {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+.btn-propio {
+	color: var(--color-texto);
+	background-color: var(--color-principal);
+	border-color: var(--color-principal);
+}
+.btn-propio:hover {
+	color: var(--color-principal);
+	background-color: var(--color-texto);
+}
+.btn-propio-2 {
+	color: var(--color-principal);
+	background-color: var(--color-texto);
+}
+.btn-propio-2:hover {
+	color: var(--color-principal);
+	background-color: var(--color-texto);
+	border-color: var(--color-principal);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: var(--color-fondo);
+	color: var(--color-texto);
+	padding-top: 56px;
+}
+
+#navbar {
+	background-color: #ba3423;
+	border: 0px;
+	border-radius: 0;
+	padding: 0;
+}
+
+#navbar a {
+	color: var(--color-texto);
+	transition: all 0.3s;
+}
+#navbar a.nav-link:hover {
+	background-color: var(--color-secundario);
+}
+
+#btn-nav {
+	border-color: var(--color-texto);
+}
+#navbarToggler {
+	justify-content: flex-end;
+}
+
+.principal {
+	min-height: calc(100vh - 69px);
+}
+@media (max-width: 767px) {
+	.principal {
+		padding-top: 3rem;
+	}
+}
+
+main.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.img-principal {
+	max-width: 400px;
+}
+.img-principal > img {
+	width: 100%;
+}
+.texto-principal {
+	color: var(--color-texto);
+	font-size: 2rem;
+}
+
+#title {
+	font-size: calc(3rem + 1.5vw);
+}
+#subtitle {
+	font-family: "Birthstone", sans-serif;
+	color: var(--color-principal);
+	font-size: 3rem;
+}
+.social-icons a {
+	color: var(--color-texto);
+}
+
+@media (min-width: 1200px) {
+	.img-principal {
+		max-width: 33vw;
+	}
+}
+
+/** Seccion SOBRE MI  */
+#sobre-mi,
+#contacto {
+	background-color: var(--color-texto);
+	color: var(--color-fondo);
+	border-radius: 0 50px 0 50px;
+	min-height: 500px;
+}
+#sobre-mi p,
+#sobre-mi h2 {
+	margin-bottom: 0;
+}
+@media (min-width: 768px) {
+	#sobre-mi p {
+		flex-basis: 70%;
+	}
+}
+
+/** Seccion SOBRE MI  */
+#trabajos div.row {
+	color: var(--color-fondo);
+}
+#sobre-mi h2,
+#contactame h2,
+#sobre-mi a {
+	color: var(--color-principal);
+}
+
+/** Seccion MIS TRABAJOS */
+.card {
+	background-color: var(--color-texto);
+	transition: box-shadow 0.3s;
+}
+.card:hover {
+	box-shadow: 0 0.1rem 0.4rem 3px rgba(255, 255, 255, 0.2);
+}
+#trabajos i.fab {
+	margin-right: 0.5rem;
+}
+#trabajos a:not(a.btn) {
+	color: var(--color-principal);
+	/* text-decoration: none; */
+}
+/** Seccion CONTACTAME */
+
+#form-contacto {
+	max-width: 600px;
+}
+
+/** Seccion Footer */
+#footer:before {
+	content: "";
+	display: block;
+	width: 50%;
+	background-color: var(--color-texto);
+	height: 1px;
+	margin: 0 auto 5px;
+}
+#btn-back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+}
+@media (max-width: 767px) {
+	#btn-back-to-top {
+		padding: 0.375rem 0.75rem;
+	}
+}
+.btn:focus{
+	box-shadow: 0 0 0 0.25rem #d82f1122;
+}

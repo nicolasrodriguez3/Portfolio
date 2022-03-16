@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" type="image/x-icon" href="../img/n2.png" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://kit.fontawesome.com/7ec8776863.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Nicolas Rodriguez</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Nicolás Rodriguez</a>
+				<button
+					id="btn-nav"
+					class="navbar-toggler m-2"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarToggler"
+					aria-controls="navbarToggler"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarToggler">
+					<ul class="navbar-nav mb-2 mb-md-0">
+						<li class="nav-item">
+							<a class="nav-link p-md-3" aria-current="page" href="#">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link p-md-3" href="#about-me">Sobre mí</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link p-md-3" href="#trabajos">Mis trabajos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link p-md-3" href="#contactame">Contactame</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<main class="container-fluid">
+			<section
+				class="
+					container
+					principal
+					d-flex
+					flex-md-row flex-column
+					justify-content-md-around
+					align-items-center
+					justify-content-center
+				"
+			>
+				<div class="texto-principal text-center text-md-start my-3 my-sm-5">
+					<h1 id="title">Hola! Soy Nico!</h1>
+					<h2 id="subtitle" class="my-3">web designer</h2>
+					<div class="social-icons">
+						<a
+							href="https://www.linkedin.com/in/nirodriguez/"
+							target="_blank"
+							title="Ir a mi Linkedin"
+						>
+							<i class="fab fa-linkedin-in"></i
+						></a>
+						<a
+							href="https://github.com/nicolasrodriguez3/"
+							target="_blank"
+							title="Ir a mi Github"
+							><i class="fab fa-github mx-3"></i
+						></a>
+					</div>
+				</div>
+				<div class="img-principal m-3">
+					<img src="img/foto2.png" alt="Mi foto" />
+				</div>
+			</section>
+			<div id="about-me"></div>
+			<section id="sobre-mi" class="container-fluid my-6 py-6 px-md-5
+			d-flex align-items-center">
+				<div
+					class="
+						d-flex
+						align-items-center
+						flex-column flex-md-row
+						justify-content-evenly
+					"
+				>
+					<h2
+						class="
+							col-md-4 col-lg-3
+							order-0 order-md-1
+							text-center
+							fs-1-propio
+							my-3 my-lg-0
+						"
+					>
+						Sobre mí
+					</h2>
+					<div class="col-md-8 col-lg-7 px-4 px-md-3 px-lg-5 fs-4 ">
+						<p class="mb-2 mb-lg-3">
+							Amable, curioso y autodidacta son palabras que más me describen.
+							Adicto a googlear lo que desconozco.
+						</p>
+						<p>
+							Actualmente, decidí dar un giro a mi vida y estudiar lo que
+							realmente me apasiona, por ello es que estoy realizando la carrera
+							de Desarrollo Frontend React en <a href="https://www.coderhouse.com/" target="_blank" rel="noopener noreferrer">Coderhouse</a>, en donde estoy
+							aprendiendo habilidades muy valoradas y requeridas actualmente,
+							como programación en Javascript, React y desarrollo Web con HTML y
+							CSS.
+						</p>
+					</div>
+				</div>
+			</section>
+			<!-- end #sobre-mi -->
+
+			<section id="trabajos" class="mt-6 py-4">
+				<h2 class="fs-1-propio text-center my-5">Mis trabajos</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-sm-6 col-12 mb-3">
+							<article class="card">
+								<div>
+									<img
+										src="./img/mi-portfolio-opt.png"
+										alt="Mi portfolio"
+										class="card-img-top p-3"
+									/>
+								</div>
+								<div class="card-body">
+									<h3 class="card-title">
+										<a
+											href="https://nicolasrodriguez3.github.io/Responsive-Web-Design_FCC/" target="_blank" rel="noopener noreferrer"
+											>Responsive Web Design</a
+										>
+									</h3>
+									<p class="card-text">
+										Proyectos realizados para el curso brindado por
+										FreeCodeCamp. Entre ellos se encuentra la realización de
+										este portfolio, para el cual realicé el diseño en Figma y la
+										implementación usando HTML, CSS y Bootstrap.
+									</p>
+									<a
+										href="https://github.com/nicolasrodriguez3/Responsive-Web-Design_FCC"  target="_blank" rel="noopener noreferrer"
+										class="btn btn-propio"
+										><i class="fab fa-github"></i>Ver en Github</a
+									>
+									<a
+										href="https://www.freecodecamp.org/certification/nirodri/responsive-web-design"
+										class="btn btn-propio-2" target="_blank" rel="noopener noreferrer"
+										>Ver certificado</a
+									>
+								</div>
+							</article>
+						</div>
+						<div class="col-lg-4 col-sm-6 col-12 mb-3">
+							<article class="card">
+								<div>
+									<img
+										src="./img/proyecto2.png"
+										alt="Trabajo 2"
+										class="card-img-top p-3"
+									/>
+								</div>
+								<div class="card-body">
+									<h3 class="card-title">
+										<a
+											href="https://nicolasrodriguez3.github.io/Fullstack-Coursera/module5-solution/"
+											target="_blank" rel="noopener noreferrer"
+											>Sitio para restaurante</a
+										>
+									</h3>
+									<p class="card-text">
+										Proyecto final del curso de
+										<a
+											href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" target="_blank" rel="noopener noreferrer"
+											>HTML, CSS, and Javascript for Web Developers</a
+										>
+										donde aprendí a conectarme a un servidor externo modificando
+										los datos sin tener que recargar la página.
+									</p>
+									<a
+										href="https://github.com/nicolasrodriguez3/Fullstack-Coursera/tree/main/module5-solution"
+										class="btn btn-propio" target="_blank" rel="noopener noreferrer"
+										><i class="fab fa-github"></i>Ver en Github</a
+									>
+									<a
+										href="https://www.coursera.org/account/accomplishments/verify/P46TZXHJAC7W"
+										class="btn btn-propio-2" target="_blank" rel="noopener noreferrer"
+										>Ver certificado</a
+									>
+								</div>
+							</article>
+						</div>
+						<div class="col-lg-4 col-sm-6 col-12 mb-3">
+							<article class="card">
+								<div>
+									<img
+										src="./img/clima-api.png"
+										alt="Mi portfolio"
+										class="card-img-top p-3"
+									/>
+								</div>
+								<div class="card-body">
+									<h3 class="card-title">
+										<a
+											href="https://nicolasrodriguez3.github.io/clima-api/"
+											target="_blank" rel="noopener noreferrer"
+											>El Clima</a
+										>
+									</h3>
+									<p class="card-text">
+										Creación de un sitio para consulta del clima, obteniendo los
+										datos de la API del Servicio Meteorológico Nacional.
+									</p>
+									<a
+										href="https://github.com/nicolasrodriguez3/clima-api" target="_blank" rel="noopener noreferrer"
+										class="btn btn-propio"
+										><i class="fab fa-github"></i>Ver en Github</a
+									>
+								</div>
+							</article>
+						</div>
+					</div>
+					<!-- end .row -->
+				</div>
+				<!-- end .container -->
+				<div id="contactame" class="mt-6 pt-4">
+					<h2 class="text-center fs-1-propio mt-5">Contactame</h2>
+				</div>
+			</section>
+			<!-- end Mis trabajos -->
+			<section id="contacto" class="py-5 px-2">
+				<form action="" id="form-contacto" class="px-3 mx-auto">
+					<div class="mb-3">
+						<label for="exampleInputName" class="form-label fs-4">Nombre</label>
+						<input type="text" class="form-control" id="exampleInputName" />
+					</div>
+					<div class="mb-3">
+						<label for="exampleInputEmail1" class="form-label fs-4"
+							>Email</label
+						>
+						<input
+							type="email"
+							class="form-control"
+							id="exampleInputEmail1"
+							aria-describedby="emailHelp"
+						/>
+						<div id="emailHelp" class="form-text fs-6">
+							Usado solo con fines de contacto. Tu información nunca sera
+							compartida con otros.
+						</div>
+					</div>
+					<div class="mb-3">
+						<label for="puedo-ayudarte" class="form-label fs-4"
+							>¿Cómo puedo ayudarte?</label
+						>
+						<textarea
+							class="form-control"
+							name="ayudarte"
+							id="puedo-ayudarte"
+							cols="50"
+							rows="5"
+						></textarea>
+					</div>
+					<button type="submit" class="btn btn-propio disabled">Submit</button><span class="mx-3">En construcción 😊</span>
+				</form>
+			</section>
+			<!-- end Contacto -->
+		</main>
+		<footer class="text-center mt-5 py-2" id="footer">
+			&copy; 2021. Nicolás Rodriguez
+		</footer>
+		<!-- Back to top button -->
+		<button
+			type="button"
+			class="btn btn-propio btn-floating btn-lg"
+			id="btn-back-to-top"
+		>
+			<i class="fas fa-arrow-up"></i>
+		</button>
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+			integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+		<script src="js/js.js"></script>
+	</body>
+</html>
