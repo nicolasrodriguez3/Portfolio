@@ -124,6 +124,8 @@ main.container-fluid {
 }
 .social-icons a {
 	color: var(--color-texto);
+}.social-icons a:hover {
+	color: var(--color-principal);
 }
 
 @media (min-width: 1200px) {
@@ -179,6 +181,11 @@ main.container-fluid {
 
 #form-contacto {
 	max-width: 600px;
+}
+
+#response img{
+	width: 2rem;
+	margin-right: 0.5rem;
 }
 
 /** Seccion Footer */
