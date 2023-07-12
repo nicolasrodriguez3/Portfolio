@@ -1,6 +1,7 @@
 import miniappsImg from "../img/miniapps.png"
 import laNerdShopImg from "../img/la-nerd.png"
 import soyJuanImg from "../img/soy-juan.png"
+import EachProyect from "./EachProyect"
 
 const proyects = [
 	{
@@ -18,8 +19,10 @@ const proyects = [
 		name: "La Nerd Shop",
 		img: laNerdShopImg,
 		textParagraph: [
-			'El proyecto "La Nerd Shop" es una emocionante colaboración realizada en conjunto entre dos desarrolladores y dos diseñadores, todos graduados de Coderhouse',
-			"El objetivo de este proyecto fue crear una landing page la cual pueda en el futuro convertirse en un ecommerce completamente funcional. Todo el desarrollo se realizó utilizando la popular biblioteca de JavaScript, React.",
+			"La Nerd Shop es un proyecto web que realicé junto a otro desarrollador y dos diseñadores UI.",
+			" Se trata de una landing page bajo la temática geek y nerd, con un diseño moderno, colorido y divertido, que refleja la personalidad de la marca y de su público objetivo.",
+			"La página también está preparada para convertirse en un ecommerce en el futuro. Fue creada en React, siguiendo las mejores prácticas de accesibilidad, usabilidad y SEO.",
+			"Estoy muy orgulloso del resultado final y de haber trabajado en equipo con otros profesionales.",
 		],
 		linkToCode: "https://github.com/nicolasrodriguez3/la-nerd-shop",
 		linkToSite: "https://la-nerd-shop.vercel.app/",
@@ -28,7 +31,7 @@ const proyects = [
 		name: "Soy Juan, tu tutor",
 		img: soyJuanImg,
 		textParagraph: [
-			'"Soy Juan, tu tutor" es el resultado de un trabajo colaborativo entre dos desarrolladores web que participaron en el curso de Coderhouse.',
+			'"Soy Juan, tu tutor" es el resultado de un trabajo colaborativo que realice junto a otro desarrollador web.',
 			"La página web tiene como objetivo presentar a Juan como un tutor experto y confiable, que puede ayudar a sus alumnos y clientes a mejorar sus habilidades y conocimientos.",
 			"Para ello, diseñamos una estructura sencilla y clara, con cuatro secciones principales: inicio, sobre mí, testimonios y contacto. En cada sección, se puede encontrar información relevante sobre Juan, sus servicios, sus alumnos y sus clientes, así como un formulario para enviarle un mensaje.",
 		],
@@ -36,35 +39,15 @@ const proyects = [
 		linkToSite: "https://la-nerd-shop.vercel.app/",
 	},
 ]
+
 export default function Proyects() {
 	return (
 		<section className="p-4">
-			<h2 className="text-3xl my-4">Proyectos</h2>
-			<div>
-				{proyects.map(({ name, img, textParagraph }, index) => {
+			<h2 className="text-3xl my-16">Proyectos</h2>
+			<div className="container mx-auto">
+				{proyects.map((proyect, index) => {
 					return (
-						<article
-							key={name}
-							className="grid grid-cols-1 md:grid-cols-2 grid-flow-dense gap-4 items-center mb-12">
-							<h3 className="text-4xl col-span-full mb-2">{name}</h3>
-							<picture className={index % 2 ? "col-start-2" : ""}>
-								<img
-									src={img}
-									alt={`Imagen del proyecto ${name}`}
-									className="block max-w-md mx-auto w-full mb-2"
-								/>
-							</picture>
-							<div>
-								{textParagraph.map((text) => (
-									<p
-										key={text}
-										className="text-left
-							mb-2 text-lg">
-										{text}
-									</p>
-								))}
-							</div>
-						</article>
+						<EachProyect key={index} proyect={proyect} index={index} />
 					)
 				})}
 			</div>
