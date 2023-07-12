@@ -13,7 +13,7 @@ export default function Hero() {
 				</h1>
 				<p className="font-serif text-3xl md:text-4xl text-right">frontend developer</p>
 			</section>
-			<img src={fotoHero} alt="Foto de mi persona de brazos cruzados" />
+			<img src={fotoHero} alt="Foto de mi persona de brazos cruzados" className="w-[80%] max-w-xs" />
 		</main>
 	)
 }
