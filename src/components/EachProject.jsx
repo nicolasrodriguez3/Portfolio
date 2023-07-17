@@ -1,7 +1,9 @@
-function EachProyect({ proyect }, index) {
+function EachProject({ proyect }, index) {
 	const { name, img, textParagraph } = proyect
 	return (
-		<article key={name} className="mb-32">
+		<article
+			key={name}
+			className="mb-32">
 			<h3 className="text-4xl col-span-full mb-3">{name}</h3>
 			<picture className="flex flex-col md:flex-row gap-4">
 				<img
@@ -25,4 +27,4 @@ function EachProyect({ proyect }, index) {
 		</article>
 	)
 }
-export default EachProyect
+export default EachProject
