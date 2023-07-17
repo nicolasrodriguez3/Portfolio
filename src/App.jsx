@@ -1,8 +1,10 @@
+import { Route } from "wouter"
 import "./App.css"
 import AboutMe from "./components/AboutMe"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
-import Proyects from "./components/Proyects"
+import Projects from "./components/Projects"
+import ProjectView from "./views/ProjectView"
 
 function App() {
 	return (
@@ -10,12 +12,12 @@ function App() {
 		<div className="container mx-auto">
 			<Hero />
 			<AboutMe />
-			<Proyects />
-		</div>
+			<Projects />
 			<Footer />
+			
+		</div>
 		</>
 	)
 }
 
 export default App
-

@@ -1,9 +1,10 @@
 import miniappsImg from "../img/miniapps.png"
 import laNerdShopImg from "../img/la-nerd.png"
 import soyJuanImg from "../img/soy-juan.png"
-import EachProyect from "./EachProyect"
+import EachProject from "./EachProject"
+import { Link } from "wouter"
 
-const proyects = [
+const projects = [
 	{
 		name: "Miniapps",
 		img: miniappsImg,
@@ -45,9 +46,18 @@ export default function Proyects() {
 		<section className="p-4">
 			<h2 className="text-3xl my-16">Proyectos</h2>
 			<div className="container mx-auto">
-				{proyects.map((proyect, index) => {
+				{projects.map((proyect, index) => {
 					return (
-						<EachProyect key={index} proyect={proyect} index={index} />
+						<Link
+							key={index}
+							href="/projects/:id">
+							<a>
+								<EachProject
+									proyect={proyect}
+									index={index}
+								/>
+							</a>
+						</Link>
 					)
 				})}
 			</div>
