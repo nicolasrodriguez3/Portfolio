@@ -7,9 +7,11 @@ import Proyects from "./components/Proyects"
 function App() {
 	return (
 		<>
+		<div className="container mx-auto">
 			<Hero />
 			<AboutMe />
 			<Proyects />
+		</div>
 			<Footer />
 		</>
 	)

@@ -1,7 +1,12 @@
 #root {
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
+  overflow-x: hidden;
   text-align: center;
   position: relative;
+}
+
+.footer__bg {
+  -webkit-mask-image: linear-gradient(to top, #000000 60%, transparent 98%);
+  -webkit-mask-repeat: no-repeat;
+  mask-image: linear-gradient(to top, #000000 60%, transparent 98%);
+  mask-repeat: no-repeat;
 }

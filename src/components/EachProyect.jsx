@@ -11,7 +11,7 @@ function EachProyect({ proyect }, index) {
 						index % 2 === 0 ? "md:order-2" : ""
 					} inline-block max-w-[26rem] mx-auto w-full object-contain mb-2`}
 				/>
-				<div className="md:w-[60%]">
+				<figcaption  className="md:w-[50%]">
 					{textParagraph?.map((text) => (
 						<p
 							key={text}
@@ -20,7 +20,7 @@ function EachProyect({ proyect }, index) {
 							{text}
 						</p>
 					))}
-				</div>
+				</figcaption>
 			</picture>
 		</article>
 	)

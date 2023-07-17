@@ -15,7 +15,7 @@
 :root {
 	--font1: "Inconsolata", monospace;
 	--font2: "Laila", sans-serif;
-	--bg-color: #212121;
+	--bg-color: #141414;
 	--primary-color: rgba(255, 255, 255, 0.87);
 
 	font-family: var(--font1), system-ui, sans-serif;
