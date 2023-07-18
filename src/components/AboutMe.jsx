@@ -34,7 +34,7 @@ const technologies = [
 
 export default function AboutMe() {
 	return (
-		<section>
+		<section className="py-16 px-2 container mx-auto">
 			<h4 className="text-2xl">Tecnología al servicio de tu empresa</h4>
 			<div className="inline-grid grid-cols-2 md:grid-cols-6 justify-items-center gap-x-8 gap-y-2 mx-auto py-10 ">
 				{technologies.map(({ name, img }) => {

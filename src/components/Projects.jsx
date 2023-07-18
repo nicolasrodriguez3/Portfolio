@@ -5,7 +5,7 @@ import { Link } from "wouter"
 export default function Proyects() {
 	return (
 		<section className="p-4">
-			<h2 className="text-3xl my-16">Proyectos</h2>
+			<h2 className="text-3xl mb-12">Proyectos</h2>
 			<div className="container mx-auto">
 				{projects.map((proyect, index) => {
 					return (
