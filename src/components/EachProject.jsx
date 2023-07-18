@@ -3,8 +3,8 @@ function EachProject({ proyect }, index) {
 	return (
 		<article
 			key={name}
-			className="mb-32">
-			<h3 className="text-4xl col-span-full mb-3">{name}</h3>
+			className="mb-32 flex ">
+			
 			<picture className="flex flex-col md:flex-row gap-4">
 				<img
 					src={img}
@@ -13,17 +13,8 @@ function EachProject({ proyect }, index) {
 						index % 2 === 0 ? "md:order-2" : ""
 					} inline-block max-w-[26rem] mx-auto w-full object-contain mb-2`}
 				/>
-				<figcaption  className="md:w-[50%]">
-					{textParagraph?.map((text) => (
-						<p
-							key={text}
-							className="text-left
-							mb-2 text-lg">
-							{text}
-						</p>
-					))}
-				</figcaption>
 			</picture>
+			<h3 className="text-4xl col-span-full mb-3">{name}</h3>
 		</article>
 	)
 }
