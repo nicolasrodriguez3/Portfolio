@@ -1,12 +1,16 @@
 import miniappsImg from "../img/miniapps.png"
 import laNerdShopImg from "../img/la-nerd.png"
 import soyJuanImg from "../img/soy-juan.png"
+import laNerdShopTumbnail from "../img/img1.png"
+import miniappsTumbnail from "../img/img2.png"
+import soyJuanTumbnail from "../img/img3.png"
 
 export const projects = [
 	{
 		name: "Miniapps",
 		id: "miniapps",
 		img: miniappsImg,
+		tumbnail: miniappsTumbnail,
 		technologies: ["JavaScript", "SCSS", "HTML", "API", "Sweet Alert 2"],
 		textParagraph: [
 			'Miniapps! es una aplicación de página única (SPA) con cuatro "miniaplicaciones": lista de tareas, cronómetro, temporizador y el clima.',
@@ -20,6 +24,7 @@ export const projects = [
 		name: "La Nerd Shop",
 		id: "la_nerd_shop",
 		img: laNerdShopImg,
+		tumbnail: laNerdShopTumbnail,
 		technologies: ["React", "SCSS", "HTML", "Framer Motion"],
 		textParagraph: [
 			"La Nerd Shop es un proyecto web que realicé junto a otro desarrollador y dos diseñadores UI.",
@@ -31,9 +36,10 @@ export const projects = [
 		linkToSite: "https://la-nerd-shop.vercel.app/",
 	},
 	{
-		name: "Soy Juan, tu tutor",
+		name: "Soy Juan, tu tutor.",
 		id: "soy_juan_tu_tutor",
 		img: soyJuanImg,
+		tumbnail: soyJuanTumbnail,
 		technologies: ["JavaScript", "SCSS", "HTML"],
 		textParagraph: [
 			'"Soy Juan, tu tutor" es el resultado de un trabajo colaborativo que realice junto a otro desarrollador web.',

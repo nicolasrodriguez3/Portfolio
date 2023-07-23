@@ -1,34 +1,46 @@
-import htmlImg from "../assets/html.svg"
-import cssImg from "../assets/css.svg"
-import jsImg from "../assets/js.svg"
-import reactImg from "../assets/react.svg"
-import gitImg from "../assets/git.svg"
-import githubImg from "../assets/github.svg"
+import {
+	IconHTML,
+	IconCSS,
+	IconFigma,
+	IconReact,
+	IconGit,
+	IconGithub,
+	IconJavaScript,
+	IconSASS,
+} from "../assets/Icons"
 
 const technologies = [
 	{
 		name: "HTML5",
-		img: htmlImg,
+		img: <IconHTML />,
 	},
 	{
 		name: "CSS",
-		img: cssImg,
+		img: <IconCSS />,
 	},
 	{
 		name: "JavaScript",
-		img: jsImg,
+		img: <IconJavaScript />,
 	},
 	{
 		name: "React",
-		img: reactImg,
+		img: <IconReact />,
 	},
 	{
 		name: "Git",
-		img: gitImg,
+		img: <IconGit />,
 	},
 	{
 		name: "Github",
-		img: githubImg,
+		img: <IconGithub />,
+	},
+	{
+		name: "Figma",
+		img: <IconFigma />,
+	},
+	{
+		name: "SASS",
+		img: <IconSASS />,
 	},
 ]
 
@@ -36,12 +48,12 @@ export default function AboutMe() {
 	return (
 		<section className="py-16 px-2 container mx-auto">
 			<h4 className="text-2xl">Tecnología al servicio de tu empresa</h4>
-			<div className="inline-grid grid-cols-2 md:grid-cols-6 justify-items-center gap-x-8 gap-y-2 mx-auto py-10 ">
+			<div className="inline-grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 justify-items-center gap-x-10 gap-y-4 mx-auto py-12 ">
 				{technologies.map(({ name, img }) => {
 					return (
-						<picture key={name} className="">
-							<img src={img} alt={`Logo de ${name}`} />
-							<figcaption>{name}</figcaption>
+						<picture key={name} className="flex flex-col justify-center items-center gap-2">
+							{img}
+							<figcaption className="text-xl">{name}</figcaption>
 						</picture>
 					)
 				})}
