@@ -1,10 +1,12 @@
+import { ExternalLink } from "../assets/Icons"
+
 function EachProject({ proyect }) {
 	const { name, tumbnail, technologies } = proyect
 	return (
 		<article
 			key={name}
-			className="group py-16 px-12 mb-8 flex justify-left items-center flex-col md:flex-row gap-12 container mx-auto border-b border-gray-400 bg-slate-300 dark:bg-[#111] hover:bg-[#0c0c0c] rounded-xl">
-			<picture className="order-1 md:-order-1">
+			className="group py-16 px-4 md:px-8 lg:px-12 mb-8 flex justify-left items-center flex-col sm:flex-row gap-4 sm:gap-8 md:gap-12 container mx-auto border-b border-gray-400 bg-slate-300 dark:bg-[#111] hover:bg-[#0c0c0c] rounded-xl">
+			<picture className="order-1 sm:-order-1">
 				<img
 					src={tumbnail}
 					alt={`Imagen del proyecto ${name}`}
@@ -22,21 +24,7 @@ function EachProject({ proyect }) {
 				</div>
 			</aside>
 			<p className="flex items-center gap-2 ">
-				<span className="text-white text-3xl"></span>{" "}
-				<svg
-					className="w-6 h-6 group-hover:text-[#53d301] text-gray-800 dark:text-white"
-					aria-hidden="true"
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 18 18">
-					<path
-						stroke="currentColor"
-						strokeLinecap="round"
-						strokeLinejoin="round"
-						strokeWidth="2"
-						d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
-					/>
-				</svg>
+				<ExternalLink className={"hidden md:block w-6 h-6 group-hover:text-[#53d301] text-gray-800 dark:text-white"} />
 			</p>
 		</article>
 	)
