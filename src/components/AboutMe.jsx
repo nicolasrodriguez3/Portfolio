@@ -12,7 +12,7 @@ import {
 const technologies = [
 	{
 		name: "HTML5",
-		img: <IconHTML className="w-16 h-16 " />,
+		img: <IconHTML className="w-12 h-12 " />,
 	},
 	{
 		name: "CSS",

@@ -5,7 +5,7 @@ function EachProject({ proyect }) {
 	return (
 		<article
 			key={name}
-			className="group py-16 px-4 md:px-8 lg:px-12 mb-8 flex justify-left items-center flex-col sm:flex-row gap-4 sm:gap-8 md:gap-12 container mx-auto border-b border-gray-400 bg-slate-300 dark:bg-[#111] hover:bg-slate-400 dark:hover:bg-[#0c0c0c] rounded-xl">
+			className="group py-16 px-4 md:px-8 lg:px-12 mb-8 flex justify-left items-center flex-col sm:flex-row gap-4 sm:gap-8 md:gap-12 container mx-auto border-b border-gray-400 bg-slate-300 dark:bg-[#111] hover:bg-slate-200 dark:hover:bg-[#0c0c0c] rounded-xl">
 			<picture className="order-1 sm:-order-1">
 				<img
 					src={tumbnail}
@@ -24,7 +24,7 @@ function EachProject({ proyect }) {
 				</div>
 			</aside>
 			<p className="flex items-center gap-2 ">
-				<ExternalLink className={"hidden md:block w-6 h-6 group-hover:text-[#b515ca] dark:group-hover:text-[#53d301] text-gray-800 dark:text-white"} />
+				<ExternalLink className={"hidden md:block w-6 h-6 group-hover:text-[#e837ff] dark:group-hover:text-[#53d301] text-gray-800 dark:text-white"} />
 			</p>
 		</article>
 	)

@@ -1,7 +1,7 @@
 
 export default function Contact() {
 	return (
-		<div>¡Hablemos sobre tu proyecto!
+		<div className="text-[#b811ce] font-bold">¡Hablemos sobre tu proyecto!
 			
 		</div>
 	)

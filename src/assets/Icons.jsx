@@ -68,8 +68,13 @@ export const IconJavaScript = ({ className }) => {
 			viewBox="0 0 14 14"
 			stroke="#000000"
 			strokeWidth="0.00014">
-			<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-			<g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+			<g
+				id="SVGRepo_bgCarrier"
+				strokeWidth="0"></g>
+			<g
+				id="SVGRepo_tracerCarrier"
+				strokeLinecap="round"
+				strokeLinejoin="round"></g>
 			<g id="SVGRepo_iconCarrier">
 				<path d="M 11.714286,1 2.285714,1 C 1.575893,1 1,1.57589 1,2.28571 l 0,9.42858 C 1,12.42411 1.575893,13 2.285714,13 l 9.428572,0 C 12.424107,13 13,12.42411 13,11.71429 L 13,2.28571 C 13,1.57589 12.424107,1 11.714286,1 Z m -4.183929,9.35893 c 0,1.16786 -0.685714,1.70089 -1.684821,1.70089 -0.902679,0 -1.425,-0.46607 -1.692857,-1.03125 l 0.91875,-0.55446 c 0.176785,0.31339 0.3375,0.57857 0.725892,0.57857 0.369643,0 0.605358,-0.14464 0.605358,-0.70982 l 0,-3.83304 1.127678,0 0,3.84911 z m 2.667857,1.70089 c -1.047321,0 -1.725,-0.49821 -2.054464,-1.15178 L 9.0625,10.37768 c 0.241071,0.39375 0.557143,0.68571 1.111607,0.68571 0.466072,0 0.766072,-0.23303 0.766072,-0.55714 0,-0.38571 -0.305358,-0.52232 -0.822322,-0.75 L 9.836607,9.63571 C 9.022321,9.29018 8.483929,8.85357 8.483929,7.93482 c 0,-0.84643 0.645535,-1.48928 1.65,-1.48928 0.717857,0 1.232142,0.2491 1.601785,0.90267 l -0.878571,0.5625 C 10.664286,7.56518 10.455357,7.42857 10.13125,7.42857 c -0.329464,0 -0.538393,0.20893 -0.538393,0.48214 0,0.3375 0.208929,0.47411 0.69375,0.68572 l 0.28125,0.12053 c 0.958929,0.40983 1.497322,0.83036 1.497322,1.77322 0,1.0125 -0.798215,1.56964 -1.866965,1.56964 z"></path>
 			</g>
@@ -85,8 +90,13 @@ export const IconGit = ({ className }) => {
 			fill="currentColor"
 			viewBox="0 0 24 24"
 			xmlns="http://www.w3.org/2000/svg">
-			<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-			<g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+			<g
+				id="SVGRepo_bgCarrier"
+				strokeWidth="0"></g>
+			<g
+				id="SVGRepo_tracerCarrier"
+				strokeLinecap="round"
+				strokeLinejoin="round"></g>
 			<g id="SVGRepo_iconCarrier">
 				<path
 					fillRule="evenodd"
@@ -148,8 +158,7 @@ export const Linkedin = ({ className }) => {
 export const LinkedinRounded = ({ className }) => {
 	return (
 		<svg
-			className={classNameIcon(className)}
-			aria-hidden="true"
+			className={className}
 			fill="currentColor"
 			version="1.1"
 			id="Layer_1"
@@ -157,13 +166,17 @@ export const LinkedinRounded = ({ className }) => {
 			xmlnsXlink="http://www.w3.org/1999/xlink"
 			viewBox="-143 145 512 512"
 			xmlSpace="preserve">
-			<path
-				d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z
-	 M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7
-	c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4
-	c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6
-	c35.5,0,63.3,23,63.3,72.4V508.1z"
-			/>
+			<g
+				id="SVGRepo_bgCarrier"
+				strokeWidth="0"></g>
+			<g
+				id="SVGRepo_tracerCarrier"
+				strokeLinecap="round"
+				strokeLinejoin="round"></g>
+			<g id="SVGRepo_iconCarrier">
+				{" "}
+				<path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M41.4,508.1H-8.5V348.4h49.9 V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7c18.4,0,29.7,11.9,30.1,27.7 C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4c-14.9,0-23.2,10-27,19.6 c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6c35.5,0,63.3,23,63.3,72.4V508.1z "></path>{" "}
+			</g>
 		</svg>
 	)
 }
@@ -171,13 +184,18 @@ export const LinkedinRounded = ({ className }) => {
 export const EmailIcon = ({ className }) => {
 	return (
 		<svg
-		className={className}
+			className={className}
 			aria-hidden="true"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 24 24">
-			<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-			<g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+			<g
+				id="SVGRepo_bgCarrier"
+				strokeWidth="0"></g>
+			<g
+				id="SVGRepo_tracerCarrier"
+				strokeLinecap="round"
+				strokeLinejoin="round"></g>
 			<g id="SVGRepo_iconCarrier">
 				<path
 					d="M4 7L10.94 11.3375C11.5885 11.7428 12.4115 11.7428 13.06 11.3375L20 7M5 18H19C20.1046 18 21 17.1046 21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18Z"
@@ -190,7 +208,37 @@ export const EmailIcon = ({ className }) => {
 	)
 }
 
-export const ExternalLink = ({className}) => {
+export const EmailCircleIcon = ({ className }) => {
+	return (
+		<svg
+			className={className}
+			viewBox="0 0 512 512"
+			id="_x30_1"
+			fill="currentColor"
+			version="1.1"
+			xmlSpace="preserve"
+			xmlns="http://www.w3.org/2000/svg"
+			xmlnsXlink="http://www.w3.org/1999/xlink">
+			<g
+				id="SVGRepo_bgCarrier"
+				strokeWidth="0"></g>
+			<g
+				id="SVGRepo_tracerCarrier"
+				strokeLinecap="round"
+				strokeLinejoin="round"
+				stroke="#CCCCCC"
+				strokeWidth="7.168000000000001"></g>
+			<g id="SVGRepo_iconCarrier">
+				<g>
+					<path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M412,353.5 c0,20.193-16.37,36.562-36.562,36.562H136.562c-20.193,0-36.562-16.37-36.562-36.562v-195c0-20.193,16.37-36.562,36.562-36.562 h238.875c20.193,0,36.562,16.37,36.562,36.562V353.5z"></path>
+					<path d="M334.463,166.703L256,212.004l-78.463-45.301c-8.744-5.048-19.924-2.052-24.973,6.691 c-5.048,8.744-2.052,19.924,6.691,24.973l87.604,50.578l0.001-0.002c2.777,1.6,5.936,2.443,9.139,2.448 c3.204-0.004,6.363-0.848,9.139-2.448l0.001,0.002l87.604-50.578c8.744-5.048,11.74-16.229,6.691-24.973 C354.388,164.651,343.207,161.655,334.463,166.703z"></path>
+				</g>
+			</g>
+		</svg>
+	)
+}
+
+export const ExternalLink = ({ className }) => {
 	return (
 		<svg
 			className={className}
