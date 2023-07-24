@@ -1,11 +1,11 @@
-const classNameIcon = (w = 16) => {
-	return `w-${w} h-${w} text-gray-800 dark:text-white`
+const classNameIcon = (className) => {
+	return `${className}} text-gray-800 dark:text-white`
 }
 
-export const IconHTML = ({ w }) => {
+export const IconHTML = ({ className }) => {
 	return (
 		<svg
-			className={classNameIcon(w)}
+			className={classNameIcon(className)}
 			aria-hidden="true"
 			xmlns="http://www.w3.org/2000/svg"
 			fill="currentColor"
@@ -15,10 +15,10 @@ export const IconHTML = ({ w }) => {
 	)
 }
 
-export const IconReact = ({ w }) => {
+export const IconReact = ({ className }) => {
 	return (
 		<svg
-			className={classNameIcon(w)}
+			className={classNameIcon(className)}
 			aria-hidden="true"
 			xmlns="http://www.w3.org/2000/svg"
 			fill="currentColor"
@@ -29,10 +29,10 @@ export const IconReact = ({ w }) => {
 	)
 }
 
-export const IconCSS = ({ w }) => {
+export const IconCSS = ({ className }) => {
 	return (
 		<svg
-			className={classNameIcon(w)}
+			className={classNameIcon(className)}
 			aria-hidden="true"
 			xmlns="http://www.w3.org/2000/svg"
 			fill="currentColor"
@@ -42,10 +42,10 @@ export const IconCSS = ({ w }) => {
 	)
 }
 
-export const IconFigma = ({ w }) => {
+export const IconFigma = ({ className }) => {
 	return (
 		<svg
-			className={classNameIcon(w)}
+			className={classNameIcon(className)}
 			aria-hidden="true"
 			xmlns="http://www.w3.org/2000/svg"
 			fill="currentColor"
@@ -58,10 +58,10 @@ export const IconFigma = ({ w }) => {
 	)
 }
 
-export const IconJavaScript = ({ w }) => {
+export const IconJavaScript = ({ className }) => {
 	return (
 		<svg
-			className={classNameIcon(w)}
+			className={classNameIcon(className)}
 			aria-hidden="true"
 			xmlns="http://www.w3.org/2000/svg"
 			fill="currentColor"
@@ -77,10 +77,10 @@ export const IconJavaScript = ({ w }) => {
 	)
 }
 
-export const IconGit = ({ w }) => {
+export const IconGit = ({ className }) => {
 	return (
 		<svg
-			className={classNameIcon(w)}
+			className={classNameIcon(className)}
 			aria-hidden="true"
 			fill="currentColor"
 			viewBox="0 0 24 24"
@@ -97,10 +97,10 @@ export const IconGit = ({ w }) => {
 	)
 }
 
-export const IconGithub = ({ w }) => {
+export const IconGithub = ({ className }) => {
 	return (
 		<svg
-			className={classNameIcon(w)}
+			className={classNameIcon(className)}
 			aria-hidden="true"
 			xmlns="http://www.w3.org/2000/svg"
 			fill="currentColor"
@@ -114,11 +114,11 @@ export const IconGithub = ({ w }) => {
 	)
 }
 
-export const IconSASS = ({ w }) => {
+export const IconSASS = ({ className }) => {
 	return (
 		<svg
 			viewBox="0 0 134 115"
-			className={classNameIcon(w)}
+			className={classNameIcon(className)}
 			aria-hidden="true"
 			fill="currentColor"
 			xmlns="http://www.w3.org/2000/svg">
@@ -127,10 +127,10 @@ export const IconSASS = ({ w }) => {
 	)
 }
 
-export const Linkedin = ({ w }) => {
+export const Linkedin = ({ className }) => {
 	return (
 		<svg
-			className={classNameIcon(w)}
+			className={classNameIcon(className)}
 			aria-hidden="true"
 			fill="currentColor"
 			xmlns="http://www.w3.org/2000/svg"
@@ -145,10 +145,10 @@ export const Linkedin = ({ w }) => {
 	)
 }
 
-export const LinkedinRounded = ({ w }) => {
+export const LinkedinRounded = ({ className }) => {
 	return (
 		<svg
-			className={classNameIcon(w)}
+			className={classNameIcon(className)}
 			aria-hidden="true"
 			fill="currentColor"
 			version="1.1"
@@ -168,12 +168,12 @@ export const LinkedinRounded = ({ w }) => {
 	)
 }
 
-export const EmailIcon = ({ w }) => {
+export const EmailIcon = ({ className }) => {
 	return (
 		<svg
-			className={classNameIcon(w)}
+		className={className}
 			aria-hidden="true"
-			fill=""
+			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 24 24">
 			<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>

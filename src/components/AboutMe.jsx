@@ -12,35 +12,35 @@ import {
 const technologies = [
 	{
 		name: "HTML5",
-		img: <IconHTML />,
+		img: <IconHTML className="w-16 h-16 " />,
 	},
 	{
 		name: "CSS",
-		img: <IconCSS />,
+		img: <IconCSS className="w-12 h-12 "/>,
 	},
 	{
 		name: "JavaScript",
-		img: <IconJavaScript />,
+		img: <IconJavaScript className="w-12 h-12 "/>,
 	},
 	{
 		name: "React",
-		img: <IconReact />,
+		img: <IconReact className="w-12 h-12 "/>,
 	},
 	{
 		name: "Git",
-		img: <IconGit />,
+		img: <IconGit className="w-12 h-12 "/>,
 	},
 	{
 		name: "Github",
-		img: <IconGithub />,
+		img: <IconGithub className="w-12 h-12 "/>,
 	},
 	{
 		name: "Figma",
-		img: <IconFigma />,
+		img: <IconFigma className="w-12 h-12 "/>,
 	},
 	{
 		name: "SASS",
-		img: <IconSASS />,
+		img: <IconSASS className="w-12 h-12 "/>,
 	},
 ]
 
