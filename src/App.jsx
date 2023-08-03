@@ -1,13 +1,11 @@
 import "./App.css"
-import Footer from "./components/Footer"
 import Router from "./router/Router"
 
 function App() {
 	return (
-		<>
+		<main>
 			<Router />
-			<Footer />
-		</>
+		</main>
 	)
 }
 

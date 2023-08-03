@@ -11,6 +11,7 @@ export default {
       serif: ['Laila', 'sans-serif'],
     },
   },
-  plugins: [],
+  // darkMode: 'class',
+  plugins: ['prettier-plugin-tailwindcss'],
 }
 

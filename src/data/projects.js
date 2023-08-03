@@ -1,9 +1,9 @@
 import miniappsImg from "../img/miniapps.png"
 import laNerdShopImg from "../img/la-nerd.png"
 import soyJuanImg from "../img/soy-juan.png"
-import laNerdShopTumbnail from "../img/img1.png"
-import miniappsTumbnail from "../img/img2.png"
-import soyJuanTumbnail from "../img/img3.png"
+import miniappsTumbnail from "../img/miniapps-capture.png"
+import laNerdShopTumbnail from "../img/la-nerd.webp"
+import soyJuanTumbnail from "../img/soy-juan.webp"
 
 export const projects = [
 	{
@@ -36,7 +36,7 @@ export const projects = [
 		linkToSite: "https://la-nerd-shop.vercel.app/",
 	},
 	{
-		name: "Soy Juan, tu tutor.",
+		name: "Soy Juan, tu tutor",
 		id: "soy_juan_tu_tutor",
 		img: soyJuanImg,
 		tumbnail: soyJuanTumbnail,
