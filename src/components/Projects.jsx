@@ -1,6 +1,6 @@
 import { projects } from "../data/projects";
 import EachProject from "./EachProject";
-import { Link } from "wouter";
+import { Link } from "react-router-dom";
 
 export default function Proyects() {
   return (
@@ -9,10 +9,8 @@ export default function Proyects() {
       <div className="container mx-auto">
         {projects.map((proyect, index) => {
           return (
-            <Link key={index} href={`/projects/${proyect.id}`}>
-              <a className="no-underline">
-                <EachProject proyect={proyect} index={index} />
-              </a>
+            <Link key={index} to={`/projects/${proyect.id}`} className="no-underline">
+              <EachProject proyect={proyect} index={index} />
             </Link>
           );
         })}

@@ -1,22 +1,19 @@
-import { Link, useLocation } from "wouter";
+import { Link, useParams } from "react-router-dom";
 import { projects } from "../data/projects";
 import Footer from "../components/Footer";
 import { ArrowLeftIcon } from "../assets/Icons";
 
-export default function ProjectView({ params }) {
-  const setLocation = useLocation()[1];
-
-  const project = projects.find((eachProject) => eachProject.id === params.id);
+export default function ProjectView() {
+  const { id } = useParams()
+  const project = projects.find((eachProject) => eachProject.id === id);
 
   if (!project)
     return (
       <div className="mx-auto flex min-h-screen max-w-screen-xl flex-col">
-        <main className="container flex flex-grow flex-col items-center justify-center gap-4">
+        <main className="container mx-auto flex flex-grow flex-col items-center justify-center gap-4">
           <p className="text-2xl">No existe el proyecto 🙁</p>
-          <Link href="/">
-            <a className="underline hover:text-[#8851ff] dark:hover:text-[#a67cff]">
+          <Link to="/" className="underline hover:text-[#8851ff] dark:hover:text-[#a67cff]">
               Ir al inicio
-            </a>
           </Link>
         </main>
         <Footer showLinks />
@@ -27,10 +24,8 @@ export default function ProjectView({ params }) {
       <div className="container mx-auto flex max-w-screen-xl flex-grow justify-center pt-12 flex-wrap">
 
         <h2 className="flex w-full items-center gap-4 p-4 text-left text-4xl">
-          <Link href="/">
-            <a>
+          <Link to="/">
               <ArrowLeftIcon className="h-10 w-10" />
-            </a>
           </Link>
           {project.name}
         </h2>
