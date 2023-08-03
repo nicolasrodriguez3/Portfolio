@@ -10,7 +10,7 @@ export default function ProjectView({ params }) {
 
   if (!project)
     return (
-      <div className="flex min-h-screen flex-col max-w-screen-xl mx-auto">
+      <div className="mx-auto flex min-h-screen max-w-screen-xl flex-col">
         <main className="container flex flex-grow flex-col items-center justify-center gap-4">
           <p className="text-2xl">No existe el proyecto 🙁</p>
           <Link href="/">
@@ -23,8 +23,8 @@ export default function ProjectView({ params }) {
       </div>
     );
   return (
-    <div className="flex min-h-screen flex-col max-w-screen-xl mx-auto">
-      <div className="container mx-auto flex flex-grow flex-col justify-center pt-12">
+    <div className="flex min-h-screen flex-col ">
+      <div className="container mx-auto flex max-w-screen-xl flex-grow flex-col justify-center pt-12">
         <h2 className="flex w-full items-center gap-4 p-4 text-left text-4xl">
           <a onClick={() => setLocation("/")}>
             <ArrowLeftIcon className="h-10 w-10" />
@@ -38,7 +38,7 @@ export default function ProjectView({ params }) {
             className="mx-auto max-w-full object-contain"
           />
         </picture>
-        <figcaption className="max-w-2xl pt-8">
+        <figcaption className="max-w-2xl mx-auto pt-8 px-4">
           {project.textParagraph.map((text) => (
             <p key={text} className="mb-2 text-left text-lg">
               {text}
