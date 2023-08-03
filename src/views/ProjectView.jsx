@@ -24,21 +24,25 @@ export default function ProjectView({ params }) {
     );
   return (
     <div className="flex min-h-screen flex-col ">
-      <div className="container mx-auto flex max-w-screen-xl flex-grow flex-col justify-center pt-12">
+      <div className="container mx-auto flex max-w-screen-xl flex-grow justify-center pt-12 flex-wrap">
+
         <h2 className="flex w-full items-center gap-4 p-4 text-left text-4xl">
-          <a onClick={() => setLocation("/")}>
-            <ArrowLeftIcon className="h-10 w-10" />
-          </a>
+          <Link href="/">
+            <a>
+              <ArrowLeftIcon className="h-10 w-10" />
+            </a>
+          </Link>
           {project.name}
         </h2>
-        <picture className="flex flex-col items-center gap-8 p-4 md:flex-row ">
+
+        <picture className="p-4">
           <img
             src={project.img}
             alt="Imagen del sitio web finalizado"
-            className="mx-auto max-w-full object-contain"
+            className="mx-auto max-w-lg w-full object-contain"
           />
         </picture>
-        <figcaption className="max-w-2xl mx-auto pt-8 px-4">
+        <figcaption className="mx-auto max-w-2xl px-4 pt-8">
           {project.textParagraph.map((text) => (
             <p key={text} className="mb-2 text-left text-lg">
               {text}

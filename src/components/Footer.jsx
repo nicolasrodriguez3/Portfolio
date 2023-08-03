@@ -6,7 +6,7 @@ function Footer({ showLinks = true }) {
     <>
       <footer className="relative w-full">
         <div className="footer__bg absolute inset-0 z-0 bg-slate-200 bg-bottom bg-no-repeat dark:bg-[#0b111d]"></div>
-        <div className="container mx-auto flex flex-col items-center justify-between gap-4 pb-8 pt-28 px-4 sm:flex-row sm:justify-start sm:gap-8 relative">
+        <div className="container max-w-screen-xl mx-auto flex flex-col items-center justify-between gap-4 pb-8 pt-28 px-4 sm:flex-row sm:justify-start sm:gap-8 relative">
           <Link href="/" >
           <a className="text-lg text-inherit hover:text-[#8851ff] dark:hover:text-[#a67cff]">
             Nicolás Rodriguez
