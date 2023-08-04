@@ -7,10 +7,10 @@ export default function Proyects() {
     <section className="p-0 sm:p-2 md:p-4">
       <h2 className="mb-12 text-4xl">Proyectos</h2>
       <div className="container mx-auto">
-        {projects.map((proyect, index) => {
+        {projects.map((project, index) => {
           return (
-            <Link key={index} to={`/projects/${proyect.id}`} className="no-underline">
-              <EachProject proyect={proyect} index={index} />
+            <Link key={index} to={`/projects/${project.id}`} className="no-underline">
+              <EachProject proyect={project} index={index} />
             </Link>
           );
         })}

@@ -5,12 +5,13 @@ import { ArrowLeftIcon } from "../assets/Icons";
 
 export default function ProjectView() {
   const { id } = useParams()
+  
   const project = projects.find((eachProject) => eachProject.id === id);
 
   if (!project)
     return (
-      <div className="mx-auto flex min-h-screen max-w-screen-xl flex-col">
-        <main className="container mx-auto flex flex-grow flex-col items-center justify-center gap-4">
+      <div className="w-full flex min-h-screen flex-col">
+        <main className="container mx-auto max-w-screen-xl flex flex-grow flex-col items-center justify-center gap-4">
           <p className="text-2xl">No existe el proyecto 🙁</p>
           <Link to="/" className="underline hover:text-[#8851ff] dark:hover:text-[#a67cff]">
               Ir al inicio
@@ -20,13 +21,10 @@ export default function ProjectView() {
       </div>
     );
   return (
-    <div className="flex min-h-screen flex-col ">
+    <div className="flex min-h-screen flex-col">
       <div className="container mx-auto flex max-w-screen-xl flex-grow justify-center pt-12 flex-wrap">
 
-        <h2 className="flex w-full items-center gap-4 p-4 text-left text-4xl">
-          <Link to="/">
-              <ArrowLeftIcon className="h-10 w-10" />
-          </Link>
+        <h2 className="container mx-auto flex w-full items-center gap-4 p-4 text-left text-4xl">
           {project.name}
         </h2>
 

@@ -1,34 +1,23 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomeView from "../views/HomeView"
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-
-import ProjectView from "../views/ProjectView.jsx";
-import HomeView from "../views/HomeView.jsx";
+import ProjectView from "../views/ProjectView";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
-    loader: rootLoader,
-    children: [
-      {
-        path: "team",
-        element: <Team />,
-        loader: teamLoader,
-      },
-    ],
+    element: <HomeView />,
   },
+  {
+    path: "projects/:id",
+    element: <ProjectView />,
+  }
 ]);
 
 export default function Router() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomeView />} />
-        <Route path="/projects/:id" element={<ProjectView />} />
-      </Routes>
-    </BrowserRouter>
+    <RouterProvider router={router} />
   );
 }
